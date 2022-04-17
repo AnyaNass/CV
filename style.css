@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body, html {
+	height: 100%;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 15px;
+}
+.page-holder {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.header{ 
+	background-color: rgba(45, 45, 245, 0.747);
+	padding: 10px 0;
+}
+.photo img{
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.about-me{
+	display: flex;
+	justify-content: space-between;
+}
+h1{
+	font-size: 24px;
+	color: yellow;
+}
+h1 span{
+	font-size: 18px;
+	font-weight: 500;
+	color: yellow;
+}
+.contacts{
+	list-style-type: none;
+}
+.contacts li a{
+	text-decoration: none;
+	color: yellow;
+	font-size: 18px;
+}
+.contacts li a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.skills{
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	
+	margin: 30px 0 0;
+}
+.about-course p, .portfolio p, .extra-skills p{
+	font-size: 18px;
+	font-weight: 500;
+}
+.about-course ul, .portfolio ul, .extra-skills ul{
+	list-style-type: none;
+}
+.about-course ul li, .portfolio ul li, .extra-skills ul li{
+	margin: 15px 0 0;
+}
+.portfolio ul li a{
+	color: black;
+	text-decoration: none;
+}
+.portfolio ul li a span{
+	font-style: italic;
+}
+.portfolio ul li a:hover{
+	text-decoration: underline;
+}
+.about-course ul li::before, .portfolio ul li::before, .extra-skills ul li::before{
+	content: "\2713";
+	color: rgba(45, 45, 245, 0.747);
+}
